@@ -58,7 +58,8 @@ class QuizParameters {
 
   getQuizContainer(quizConfigArray) {
     for(let quizNum = 0; quizNum < quizConfigArray.length; quizNum++) {
-      quizHelper.createQuizContainer(quizNum);
+      let $quizContainer = quizHelper.createQuizContainer(quizNum);
+      $("body").append($quizContainer);
       let quiz = new ArithmeticQuiz(quizConfigArray[quizNum], quizNum, selectors);
       quiz.init();
     }

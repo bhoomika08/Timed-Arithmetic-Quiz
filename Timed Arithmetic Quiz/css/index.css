@@ -31,7 +31,12 @@
   cursor: pointer;
 }
 
-.quizParamContainer {
+.container {
   margin: 10px;
+}
+
+.answer-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
   
